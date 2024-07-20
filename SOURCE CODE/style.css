@@ -1,0 +1,553 @@
+
+/* css code starts  */
+/* body style */
+body{
+    margin:0px 1.3px;
+    font-family: poppins,'sans-serif';
+}                      
+/* top contact details section code having right and left */
+.right,.left{
+    display: flex;
+    width: 100%;
+}
+
+/* top contact deatils section making flex  */
+.head{
+    width: 80%;
+    height: 3vh;
+    border-bottom: 1px solid rgb(170, 169, 169);
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+/* top contact deatils having p tag */
+p{
+    display: inline-block;
+    margin: 10px;
+}
+
+#right i{
+    background-color: rgb(194, 189, 189);
+    
+}
+#right i:hover{
+    background-color: #f35525;
+}
+
+/* nav bar styling starts here  */
+.nav{
+  
+    width: 80%;
+    height: 3vh;
+    /* border: 1px solid rgb(170, 169, 169); */
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    padding-left: 10%;
+    padding-right: 10%;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-color: white;
+    z-index: 2;   
+}
+
+/* Nav bar right section code  */
+.right1{
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+
+}
+/* Nav bar right section code  */
+.right1 a{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+}
+/* Nav bar right section code  */
+.right1 a:hover{
+    text-decoration: none;
+    color:#f35525;
+    font-size: 17px;
+}
+.left1{
+    display: inline-block; 
+    margin-top: -25px;
+}
+
+/* styling for schedule a visit */
+#sh{
+    background-color: black;
+    width: 170px;
+    height: fit-content;
+    padding-right: 1em;
+    margin-top: -10px;
+    border-radius: 20px;
+}
+/* postion of a calender icon on schedule */
+#sh>i{
+    color: #f5f2f1; 
+    padding: 10px ; 
+    background-color: #f35525; 
+    border-radius: 50%; 
+    height: 1em; 
+    margin-right: 10px; 
+    margin-left: -1px;
+}
+/* animation of villa text using background properties */
+#villatext{
+    background: linear-gradient(to right, teal,rgb(205, 218, 218),teal,rgb(178, 192, 192),teal); 
+    background-clip: text; 
+    color: transparent;
+    animation: animate 2s linear infinite;
+}
+/* animation of villa text using background properties */
+@keyframes animate {
+    to{
+        background-position-x:100px ;
+    }
+    
+}
+
+/* main banner image styling starts here */
+.banner1{
+    background-image: url(../IMAGES/banner-01.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+/* styling text on banner  */
+#text1{
+    padding: 200px 80px 320px 310px;
+    font-family: 'poppins',sans-serif;
+}
+
+/* styling text on banner  */
+#text1>h2{
+    background-color: white;
+    width: fit-content;
+    padding: 8px 10px;
+    font-size: 1em;
+    margin-left: 10px;
+    font-weight: 100;
+
+}
+/* styling text on banner  */
+#text1>p{
+    color: white;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 1.5;
+}
+/* syling for loading symbol in banner */
+#load{
+    display: flex;
+    width: 50px;
+    justify-content: space-around;
+    margin-top: -5px;
+    margin-left: 20%;
+
+}
+/* Creation of loading balls */
+#load>div{
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    border-radius: 50%;
+
+}
+
+/* styling for middle section of featured area */
+details > summary {
+    padding: 6px;
+    width: 25vw;
+    background-color: #eeeeee;
+    border: none;
+    box-shadow: 1px 1px 2px #bbbbbb;
+    cursor: pointer;
+    padding: 10px;
+    list-style: none;
+    margin-left: 10px;
+}
+/* styling for middle section of featured area */
+details > p {
+    background-color: #eeeeee;
+    padding: 16px 18px;
+    width: 24vw;
+    margin: 0;
+    box-shadow: 1px 1px 2px #bbbbbb;
+    margin-left: 10px;
+    word-spacing: 1.5;
+
+}
+/* featured middle section having text */
+.featuredtext{
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: -10px;
+}
+/* styling for  featured right section*/
+.featuredleft li{
+    list-style: none;
+}
+/* styling for  featured left section*/
+.featuredright{
+    display: flex;
+}
+/* styling for  featured text line height*/
+.fttop{
+    line-height: 1.3;
+}
+/* styling for summary tags in featured section */
+.ftbottom{
+    width: 25vw;
+    margin-top: 80px;
+}
+/* styling of summary tags */
+#sum:hover{
+    color: #f35525;
+}
+/* styling for featured section */
+.featured{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    padding-top: 160px;
+    padding-bottom: 100px;
+}
+/* styling for  featured right*/
+.featuredleft {
+width: 15vw;
+margin: 50px ;
+margin-left: 80px;
+margin-right: -100px;
+background-color: #fff;
+border-radius: 15px;
+box-shadow: 0 2px 5px grey;
+padding: 20px;
+margin-top: 0px;
+height: fit-content;
+}
+
+/* featured section right side  */
+.item {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    }
+/* featured section right side  having image */
+    .icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    color: #ff5722;
+    font-size: 24px;
+    text-align: center;
+    line-height: 50px;
+    margin-right: 10px;
+    }
+/* featured section right side title style */
+    .title {
+    font-size: 25px;
+    font-weight: bold;
+    color: #333;
+    }
+/* featured section right side description style */
+    .description {
+    font-size: 14px;
+    color: #666;
+    }
+/* featured section right side  having text and description */
+    #fttext{
+        display: inline-block;
+        margin-left: 10px;
+    }
+/*  text featured style  code */
+    #ftttext{
+        text-transform: uppercase;
+        color: #f35525;
+        font-weight: 600;
+    }
+/* text best in featured area styling */
+    #best{
+        text-transform: capitalize;
+        font-size: 40px;
+        font-weight: 700;
+    }
+/*  positioning of image(house and pen symbol) to featured area using positions  */
+    #posimg{
+        background-color: #f35525; 
+        max-width: 60px; 
+        padding: 20px;
+        text-align: center;
+        border-radius: 50px;
+        position: relative;
+        top: -200px;
+        left: 180px;
+        z-index: 1;
+    }
+/* video background image having blurness  */
+    #vdbg{
+        background-image:url(../IMAGES/video-bg.jpg); 
+        width: 100%; 
+        padding: 100px 0px 250px 0px;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+
+    }
+ /* video background text styling  */   
+#vdtext{
+    font-size: 40px; 
+    font-weight: 700; 
+    color: #fff; 
+    line-height: 56px; 
+    text-align: center; 
+    margin-left: -90px;
+}
+/* postioning of video image to video section */
+    #vdbg-img img{
+        position: relative;
+        top: -150px;
+        left: 280px;
+        z-index: 1;
+        border-radius: 10px;
+    }
+/* styling  for video play button  */
+    #playbtn{
+        color: #f35525; 
+        padding: 15px ; 
+        background-color: #f4f3f3; 
+        border-radius: 50%;
+        border: 15px solid rgb(230, 117, 82, 0.9);
+        transform: translate(-35vh,-370px);
+        position: relative;
+        z-index: 1;
+    }
+/* after the video section having 3 blocks*/
+    .blocks {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 100px;
+        }
+/* making the card shapes of blocks */
+        .card {
+        background-color: #ffeee9;
+        padding: 10px;
+        display: flex;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        width: 14vw;
+        text-align: center;
+        }
+/* number in blocks */
+        .number {
+        font-size: 36px;
+        font-weight: bold;
+        color: #ff5733;
+        }
+/* text in blocks */
+        .text{
+        font-size: 14px;
+        color: #333;
+        font-weight: bold;
+        line-height: 1.5;
+        padding-left: 10px;
+        }
+/* postion of a circle top of blocks */
+        .circle {
+        width: 50px;
+        height: 50px;
+        background-color: #ff5733;
+        border-radius: 50%;
+        position: relative;
+        top: -37px;
+        right: -200px;
+        }
+/* styling of best deal main section starts here */
+    .bestdealmain {
+    font-family: Arial, sans-serif;
+    height: 90vh;
+    padding: 80px;
+    margin-top: 30px;
+    border-radius: 10px;
+    background-color:#eeeeee;
+    }
+/* button in best deal section having 3 buttons */
+.black-button {
+    display: inline-block;
+      padding: 10px 20px;
+      margin: 0 10px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      border-radius: 10px;
+      cursor: pointer;
+      background-color: #000;
+      color: #fff;
+    }
+/* text best deal  styling */
+        .best-deal {
+          color: #ff6600;
+          margin-left: 10px;
+          font-size: 16px;
+        }
+/*  having left text and buttons(anchor tags) */
+        .low{
+            display: flex;
+            justify-content: space-between;
+        }
+/* styling anchor tags in buttons  */
+        button a{
+            color: white;
+            text-decoration: none;
+        }
+/* styling of iframes */
+        iframe{
+            height: 100vh;
+            width: 90vw;
+        }
+/* styling of buttons on hover */
+        button:active{
+            background-color: #ff6600;
+        }
+/* styling of property details starts here  */
+        .property-details{
+            text-align: center;
+            margin-top: 6%;
+        }
+/*  styling for property gallery having villas */
+        .property-gallery{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            box-sizing: border-box;
+            margin-left: 60px;           
+        }
+/* styling for property gallery having villas  */
+        .property-gallery > .item{
+            padding: 5px;
+            background-color: #fafafa;
+            width: 30%;
+            border-radius: 10px;
+        }
+/* styling for property gallery having villas images */
+        .property-gallery > .item > img{
+            border-radius: 10px;
+        }
+/* styling of schedule a visit text in propert tab */
+        #item-h2{
+            padding: 10px; 
+            background-color: #000; 
+            width: fit-content; 
+            margin-left: 25%; 
+            color: white; 
+            padding: 10px 30px; 
+            border-radius: 20px;
+        }
+/* styling of schedule a visit text in propert tab */
+        #item-h2:hover{
+            background-color: #f35525;
+            color: white;
+        }
+/* styling of gallery items in property tab */
+        .property-gallery > .item :hover{
+            transform: scale(1.1);
+        }
+/* map section style */
+        #map{
+            width: 50vw;
+            height: 80vh;
+            border-radius: 10px;
+        }
+/* submit form styling  */
+        .form{
+            padding: 40px;
+            height: 90vh; 
+            width: fit-content;
+            border-radius: 10px;
+            background-color: #f5f5f5;
+            /* border: none; */      
+        }
+/* styling for input text in form */
+        .input{
+            height: 30px; 
+            width: 30vw;
+            border-radius: 20px;
+            background-color: rgb(233, 231, 231);
+            border: none;            
+        }
+/* styling for input textarea in form */
+        .input1{
+            height: 30vh; width: 30vw;
+            border-radius: 20px;background-color: rgb(233, 231, 231);
+            border: none;
+        }
+/*  styling for submit btn  in form*/
+        .submit{
+            height: 40px ; 
+            width: 150px;
+            margin-top: 30px; border-radius: 20px;
+            background-color: black; color: white;        
+        }
+/* styling for blocks after the map area  */
+        .blocks1 {
+            display: flex;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            margin: 50px;
+        }
+/* styling for blocks after the map area for making cards */
+        .blocks1 > .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 250px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+/* styling for blocks after the map area  cards having info  */
+        .info {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+/* styling for blocks after the map area  cards having descript text */
+        .descript {
+              color: #777;
+        }
+/*  postioning of footer class to the top*/
+        .footer{
+            display: flex;
+            gap: 20px;
+            justify-content: space-around;
+            height: 50vh;
+            position: relative;
+            top: -30vh;    
+        }
+/* copyright section of ending of page */
+.footlast{
+    margin-top: 20%; 
+    background-color: #000; 
+    color: #eeeeee; 
+    padding: 40px; 
+    text-align: center;
+}
+
+/* 
+ .blocks1 > .card >.icon {
+
+            font-size: 3em;
+            color: #ff6347;
+            margin-bottom: 10px;
+} */       
