@@ -51,7 +51,7 @@ p{
     position: -webkit-sticky;
     top: 0;
     background-color: white;
-    z-index: 2;   
+    z-index: 3;   
 }
 
 /* Nav bar right section code  */
@@ -196,6 +196,7 @@ details > p {
 /* styling for  featured left section*/
 .featuredright{
     display: flex;
+    flex-wrap: wrap;
 }
 /* styling for  featured text line height*/
 .fttop{
@@ -214,10 +215,25 @@ details > p {
 .featured{
     display: flex;
     justify-content: center;
+    height: max-content;
     gap: 100px;
     padding-top: 160px;
     padding-bottom: 100px;
 }
+.featuredimage{
+    position: relative;
+}
+    /*  positioning of image(house and pen symbol) to featured area using positions  */
+    #posimg{
+        background-color: #f35525; 
+        width: 60px; 
+        padding: 20px;
+        text-align: center;
+        border-radius: 50px;
+        position: absolute;
+        left: -30px;
+        bottom: 0px;
+    }
 /* styling for  featured right*/
 .featuredleft {
 width: 15vw;
@@ -251,6 +267,7 @@ height: fit-content;
     line-height: 50px;
     margin-right: 10px;
     }
+
 /* featured section right side title style */
     .title {
     font-size: 25px;
@@ -279,18 +296,7 @@ height: fit-content;
         font-size: 40px;
         font-weight: 700;
     }
-/*  positioning of image(house and pen symbol) to featured area using positions  */
-    #posimg{
-        background-color: #f35525; 
-        max-width: 60px; 
-        padding: 20px;
-        text-align: center;
-        border-radius: 50px;
-        position: relative;
-        top: -200px;
-        left: 180px;
-        z-index: 1;
-    }
+
 /* video background image having blurness  */
     #vdbg{
         background-image:url(../IMAGES/video-bg.jpg); 
@@ -299,6 +305,7 @@ height: fit-content;
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
+        position: relative;
 
     }
  /* video background text styling  */   
@@ -311,10 +318,11 @@ height: fit-content;
     margin-left: -90px;
 }
 /* postioning of video image to video section */
-    #vdbg-img img{
-        position: relative;
-        top: -25vh;
-        left: 30vh;
+    #vdbg-img {
+        width: 60%;
+        position: absolute;
+        bottom: -30%;
+        left: 20%;
         z-index: 1;
         border-radius: 10px;
     }
@@ -325,9 +333,10 @@ height: fit-content;
         background-color: #f4f3f3; 
         border-radius: 50%;
         border: 15px solid rgb(230, 117, 82, 0.9);
-        transform: translate(-38vh,-57vh);
-        position: relative;
-        z-index: 1;
+        position: absolute;
+        bottom: 10px;
+        left: 47vw;
+        z-index:2;
     }
 /* after the video section having 3 blocks*/
     .blocks {
@@ -335,6 +344,8 @@ height: fit-content;
         justify-content: space-around;
         align-items: center;
         padding-bottom: 100px;
+        position: relative;
+        margin-top: 20%;
         }
 /* making the card shapes of blocks */
         .card {
