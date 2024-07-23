@@ -321,7 +321,7 @@ height: fit-content;
     #vdbg-img {
         width: 60%;
         position: absolute;
-        bottom: -30%;
+        bottom: -35%;
         left: 20%;
         z-index: 1;
         border-radius: 10px;
@@ -354,20 +354,22 @@ height: fit-content;
         display: flex;
         border-radius: 10px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        width: 14vw;
-        text-align: center;
+        width: 15vw;
+        position: relative;
         }
 /* number in blocks */
         .number {
         font-size: 36px;
         font-weight: bold;
         color: #ff5733;
+        margin-left: 50px;
         }
 /* text in blocks */
         .text{
         font-size: 14px;
         color: #333;
         font-weight: bold;
+        margin-left: 20px;
         line-height: 1.5;
         padding-left: 10px;
         }
@@ -377,9 +379,9 @@ height: fit-content;
         height: 50px;
         background-color: #ff5733;
         border-radius: 50%;
-        position: relative;
-        top: -37px;
-        right: -200px;
+        position: absolute;
+        right: -25px;
+        top: -25px;
         }
 /* styling of best deal main section starts here */
     .bestdealmain {
@@ -543,12 +545,16 @@ height: fit-content;
             gap: 20px;
             justify-content: space-around;
             height: 50vh;
+            position: absolute;
+            top: 50%;
+            left: 7%;
+        }
+        footer{
             position: relative;
-            top: -30vh;    
         }
 /* copyright section of ending of page */
 .footlast{
-    margin-top: 20%; 
+    margin-top: 40%; 
     background-color: #000; 
     color: #eeeeee; 
     padding: 40px; 
