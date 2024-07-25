@@ -6,9 +6,19 @@ body{
     font-family: poppins,'sans-serif';
 }                      
 /* top contact details section code having right and left */
-.right,.left{
+.head #left{
     display: flex;
     width: 100%;
+    justify-content:center; 
+}
+.right1 #hum{
+    visibility: hidden;
+}
+.head #right{
+    display: flex;
+    width: 100%;
+    justify-content:flex-end;
+    gap: 1%;
 }
 
 /* top contact deatils section making flex  */
@@ -29,6 +39,7 @@ p{
 }
 
 #right i{
+    height: 100%;
     background-color: rgb(194, 189, 189);
     
 }
@@ -317,6 +328,10 @@ height: fit-content;
     margin-left: -90px;
 }
 
+#vdtext span{
+    margin-left: -90px; 
+}
+
 /* postioning of video image to video section */
     #vdbg-img {
         width: 60%;
@@ -588,6 +603,9 @@ height: fit-content;
     padding: 40px; 
     text-align: center;
 }
+#foot-im{
+    width: 100%;
+}
 
 /* 
  .blocks1 > .card >.icon {
@@ -600,7 +618,197 @@ height: fit-content;
 
 /* making resposive  */
 
-@media screen and (width<576){
-    
+@media screen and (width<426px){
+    .head{
+        width: 80%;
+        height: 8vh;
+        border-bottom: 1px solid rgb(170, 169, 169);
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .head #left{
+        display: flex;
+        width: 100%;
+        justify-content:center; 
+    }
+    .head #right{
+        display: flex;
+        width: 100%;
+        justify-content:flex-start;
+        gap: 1%;
+
+    }
+    .nav .right1{
+        flex-direction: column;
+        
+    }
+    .nav .right1 {
+        color: black;
+        background-color: #777;
+        visibility: hidden;
+    }
+    .nav .right1 #hum{
+        visibility: visible;
+        text-align: end;
+    }
+    .featuredright{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 10px;
+        margin-left: 10%;
+    }
+    .featuredimage{
+        position: relative;
+       
+    }
+   
+
+    .featured{
+        flex-direction: column;
+        gap: 10%;
+    }
+    .featuredleft{
+        margin-top: 10%;
+        width: 50%;
+    }
+/* styling for middle section of featured area */
+details > summary {
+    padding: 6px;
+    width: 50vw;
+    background-color: #eeeeee;
+    border: none;
+    box-shadow: 1px 1px 2px #bbbbbb;
+    cursor: pointer;
+    padding: 10px;
+    list-style: none;
+    margin-left: 10px;
+}
+/* styling for middle section of featured area */
+details > p {
+    background-color: #eeeeee;
+    padding: 16px 18px;
+    width: 46vw;
+    margin: 0;
+    box-shadow: 1px 1px 2px #bbbbbb;
+    margin-left: 10px;
+    word-spacing: 1.5;
+
+}
+.property-gallery{
+    width: 100%;
+    display: grid;
+   grid-template-columns: auto ;
+   grid-template-rows: auto auto ;
+    gap: 25px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+/* video background image having blurness  */
+#vdbg{
+    background-image:url(../IMAGES/video-bg.jpg); 
+    width: 100%; 
+    padding: 10vh 0px 30vh 0vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+/* video background text styling  */   
+#vdtext{
+font-size: 20px; 
+font-weight: 700; 
+color: #fff; 
+line-height: 56px; 
+text-align: center; 
+margin-left: -40px;
+}
+
+#vdtext span{
+    margin-left: -40px;
+}
+
+/* postioning of video image to video section */
+#vdbg-img {
+    width: 80%;
+    position: absolute;
+    bottom: -10%;
+    height: 30vh;
+    left: 10%;
+    z-index: 1;
+    border-radius: 10px;
+}
+/* styling  for video play button  */
+#playbtn{
+    color: #f35525; 
+    padding: 15px ; 
+    background-color: #f4f3f3; 
+    border-radius: 50%;
+    border: 15px solid rgb(230, 117, 82, 0.7);
+    position: absolute;
+    bottom: 0%;
+    left: 45vw;
+    z-index:2;
+}
+
+.blocks{
+    flex-direction: column;
+    width: 100%;
+}
+
+.blocks .card{
+    width: 50%;
+    gap: 1%;
+    margin-top: 10%;
+   
+}
+.nav{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+#iframe1{
+    width: 100%;
+    height: 50vh;
+}
+.footer{
+    flex-direction: column;
+}
+
+#map{
+    width: 90vw;
+    height: 40vh;
+    border-radius: 10px;
+    margin-left: 0%;
+}
+.blocks1{
+    flex-direction: column;
+}
+
+.footerlast{
+    width: 100%;
+
+}
+
+.footerlast .form{
+    width: 50%;
+    margin-left: 10%;
+}
+.footlast{
+    margin-top: 320%;
+}
+
+#foot-im{
+    width: 100%;
+    height: 40vh;
+}
+
     
 }
