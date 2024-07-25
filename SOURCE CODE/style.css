@@ -812,3 +812,46 @@ margin-left: -40px;
 
     
 }
+
+@media screen and (width<400px){
+    #fea-img{
+        width: 90%;
+    }
+    .property-gallery{
+        width: 80%;
+        display: grid;
+       grid-template-columns: 80vw ;
+       grid-template-rows: auto auto ;
+        gap: 25px;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+
+    #map{
+        width: 70vw;
+        height: 40vh;
+        border-radius: 10px;
+        margin-left: -10%;
+    }
+ 
+
+    .footlast{
+        margin-top: 350%;
+    }
+}
+
+@media screen and (width<370px){
+    .item img{
+        width: 90%;
+    }
+    .item #item-h2{
+        margin-left: 16%;
+    }
+    .footlast{
+        margin-top: 380%;
+    }
+    .blocks1 .card{
+        margin-left: -15%;
+    }
+}
+
