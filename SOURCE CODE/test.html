@@ -8,24 +8,27 @@
         .property-details{
             text-align: center;
             margin-top: 6%;
+            border: 1px solid black;
         }
         /*  styling for property gallery having villas */
         .property-gallery{
-            /* display: grid;
+            width: 100%;
+            display: grid;
            grid-template-columns: auto auto auto;
-           grid-template-rows: auto auto ; */
-           display: flex;
-           flex-wrap: wrap;
+           grid-template-rows: auto auto ;
+           /* display: flex;
+           flex-wrap: wrap; */
             gap: 20px;
             box-sizing: border-box;
-            margin-left: 60px;           
+            padding: 10px;
         }
 /* styling for property gallery having villas  */
         .property-gallery > .item{
             padding: 5px;
             background-color: #fafafa;
-            width: 30%;
+            width: 100%;
             border-radius: 10px;
+            margin-top: 1%;
         }
 /* styling for property gallery having villas images */
         .property-gallery > .item > img{
@@ -50,6 +53,42 @@
         .property-gallery > .item :hover{
             transform: scale(1.1);
         }
+        #pg-p{
+
+                padding: 5px; 
+                background-color:#ed896a; 
+                border-radius: 10px; 
+                text-align: left; 
+                height: fit-content;
+                width: fit-content;
+                }
+
+                        #pg-r{
+                        color: #f35525; 
+                        font-size: 22px; 
+                        font-weight: bold;
+                        }
+
+                        #mid{
+                        display: flex; 
+                        justify-content: space-around;
+                        }
+                        p{
+                            display: inline-block;
+                        }
+
+@media screen and (width<600px){
+    .property-gallery{
+            display: grid;
+           grid-template-columns: auto;
+           grid-template-rows: auto  ;
+           /* display: flex;
+           flex-wrap: wrap; */
+            gap: 20px;
+            box-sizing: border-box;
+            margin-left: 60px;           
+        }
+}
     </style>
 </head>
 <body>
@@ -67,7 +106,7 @@
                 </div>
                 <h2>18 New Street Miami, OR 97219</h2>
                 <p style="margin-right: 10px;">Bedrooms: <span style="font-weight: bold;">8</span></p>
-                <p style="margin-right: 10px;"> Bathrooms: <span style="font-weight: bold;">8</span></p><br>
+                <p style="margin-right: 10px; "> Bathrooms: <span style="font-weight: bold;">8</span></p><br>
                 <p style="margin-right: 10px;">Area: <span style="font-weight: bold;">545m2</span></p>
                 <p style="margin-right: 10px;">Floor: <span style="font-weight: bold;">3</span></p>
                 <p style="margin-right: 10px;"> Parking: <span style="font-weight: bold;">6 spots</span></p>

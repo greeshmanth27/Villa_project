@@ -121,7 +121,7 @@ p{
 }
 /* styling text on banner  */
 #text1{
-    padding: 200px 80px 320px 310px;
+    padding: 15vw 8vw 12vw 12vw;
     font-family: 'poppins',sans-serif;
 }
 
@@ -157,7 +157,6 @@ p{
     width: 10px;
     background-color: white;
     border-radius: 50%;
-
 }
 
 /* styling for middle section of featured area */
@@ -214,9 +213,9 @@ details > p {
 /* styling for featured section */
 .featured{
     display: flex;
-    justify-content: center;
+    justify-content:center;
     height: max-content;
-    gap: 100px;
+    gap: 5%;
     padding-top: 160px;
     padding-bottom: 100px;
 }
@@ -301,7 +300,7 @@ height: fit-content;
     #vdbg{
         background-image:url(../IMAGES/video-bg.jpg); 
         width: 100%; 
-        padding: 100px 0px 250px 0px;
+        padding: 10vh 0px 30vh 0vh;
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
@@ -317,6 +316,7 @@ height: fit-content;
     text-align: center; 
     margin-left: -90px;
 }
+
 /* postioning of video image to video section */
     #vdbg-img {
         width: 60%;
@@ -332,9 +332,9 @@ height: fit-content;
         padding: 15px ; 
         background-color: #f4f3f3; 
         border-radius: 50%;
-        border: 15px solid rgb(230, 117, 82, 0.9);
+        border: 15px solid rgb(230, 117, 82, 0.7);
         position: absolute;
-        bottom: 10px;
+        bottom: 0%;
         left: 47vw;
         z-index:2;
     }
@@ -362,14 +362,15 @@ height: fit-content;
         font-size: 36px;
         font-weight: bold;
         color: #ff5733;
-        margin-left: 50px;
+        margin-left: 5%;
         }
 /* text in blocks */
         .text{
         font-size: 14px;
         color: #333;
         font-weight: bold;
-        margin-left: 20px;
+        /* margin-left: 20px; */
+        margin-left: 10%;
         line-height: 1.5;
         padding-left: 10px;
         }
@@ -386,7 +387,7 @@ height: fit-content;
 /* styling of best deal main section starts here */
     .bestdealmain {
     font-family: Arial, sans-serif;
-    height: 90vh;
+    height: 100vh;
     padding: 80px;
     margin-top: 30px;
     border-radius: 10px;
@@ -431,48 +432,75 @@ height: fit-content;
             background-color: #ff6600;
         }
 /* styling of property details starts here  */
-        .property-details{
-            text-align: center;
-            margin-top: 6%;
-        }
+.property-details{
+    text-align: center;
+    margin-top: 6%;
+    /* border: 1px solid black; */
+}
 /*  styling for property gallery having villas */
-        .property-gallery{
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            box-sizing: border-box;
-            margin-left: 60px;           
-        }
+.property-gallery{
+    width: 100%;
+    display: grid;
+   grid-template-columns: auto auto auto;
+   grid-template-rows: auto auto ;
+    gap: 25px;
+    box-sizing: border-box;
+    padding: 10px;
+}
 /* styling for property gallery having villas  */
-        .property-gallery > .item{
-            padding: 5px;
-            background-color: #fafafa;
-            width: 30%;
-            border-radius: 10px;
-        }
+.property-gallery > .item{
+    padding: 4px;
+    background-color: #fafafa;
+    width: 100%;
+    border-radius: 10px;
+    /* border: 1px solid red; */
+}
 /* styling for property gallery having villas images */
-        .property-gallery > .item > img{
-            border-radius: 10px;
-        }
+.property-gallery > .item > img{
+    border-radius: 10px;
+}
 /* styling of schedule a visit text in propert tab */
-        #item-h2{
-            padding: 10px; 
-            background-color: #000; 
-            width: fit-content; 
-            margin-left: 25%; 
-            color: white; 
-            padding: 10px 30px; 
-            border-radius: 20px;
-        }
+#item-h2{
+    padding: 10px; 
+    background-color: #000; 
+    width: fit-content; 
+    margin-left: 25%; 
+    color: white; 
+    padding: 10px 30px; 
+    border-radius: 20px;
+}
 /* styling of schedule a visit text in propert tab */
-        #item-h2:hover{
-            background-color: #f35525;
-            color: white;
-        }
+#item-h2:hover{
+    background-color: #f35525;
+    color: white;
+}
 /* styling of gallery items in property tab */
-        .property-gallery > .item :hover{
-            transform: scale(1.1);
-        }
+.property-gallery > .item :hover{
+    transform: scale(1.1);
+}
+#pg-p{
+
+        padding: 5px; 
+        background-color:#ed896a; 
+        border-radius: 10px; 
+        text-align: left; 
+        height: fit-content;
+        width: fit-content;
+}
+
+#pg-r{
+        color: #f35525; 
+        font-size: 22px;       
+        font-weight: bold;   
+     }
+
+.property-gallery #mid{
+        display: flex; 
+        justify-content: space-around;
+    }
+.property-gallery p{
+        display: inline-block;
+    }
 /* map section style */
         #map{
             width: 50vw;
@@ -547,7 +575,7 @@ height: fit-content;
             height: 50vh;
             position: absolute;
             top: 50%;
-            left: 7%;
+            left: 2vw;
         }
         footer{
             position: relative;
@@ -567,4 +595,12 @@ height: fit-content;
             font-size: 3em;
             color: #ff6347;
             margin-bottom: 10px;
-} */       
+} */    
+ 
+
+/* making resposive  */
+
+@media screen and (width<576){
+    
+    
+}
